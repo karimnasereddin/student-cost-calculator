@@ -6,7 +6,7 @@ st.caption("Ask questions about your budget and get recommendations based on you
 
 # Make sure they visited the main page first
 if "df" not in st.session_state:
-    st.warning("Go to the main calculator page first so I can use your results.")
+    st.warning("Go to the main calculator page first so I can use your results. I'll be here when you get back!")
     st.stop()
 
 df = st.session_state["df"]

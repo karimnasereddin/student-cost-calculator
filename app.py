@@ -57,6 +57,16 @@ else:
 
 st.divider()
 
+# --- Share results with other pages (Budget Coach) ---
+st.session_state["df"] = df
+st.session_state["total_yearly"] = total_yearly
+st.session_state["monthly"] = monthly
+st.session_state["weekly"] = weekly
+st.session_state["hourly_wage"] = hourly_wage
+st.session_state["hours_per_week"] = hours_per_week
+st.session_state["monthly_income"] = monthly_income
+st.session_state["yearly_income"] = yearly_income
+
 # Visuals
 st.subheader("📊 Where your money goes")
 fig1, ax1 = plt.subplots()
